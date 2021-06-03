@@ -3243,3 +3243,40 @@ html {
 [src="//d35aaqx5ub95lt.cloudfront.net/images/plusLandingPage/078c936e5a5d13188ad2b9b0697b5fe3.svg"] {
 	--image-position: -88px
 }
+
+
+
+
+
+
+
+/*** Duo Strength Fixes  ***/
+
+/* Fixes the color of strength bars */
+.strengthBarBackground {
+    background-color: #4A4A4A;   
+}
+.strengthValue {
+    padding-right: 5px;
+    color: #9A9A9A;
+}
+
+/* Fixes the color of broken skill links */
+.topOfTreeList a{
+    color: #FFF;
+}
+
+/* XP Dialog Fixes */
+.crownLevelBreakdownContainer, 
+.treeLevelSentence,
+.XPBox,
+.checkpointPrediction,
+.treeLevelPrediction {
+    color: #A5A5A5 !important;   
+}
+
+#labels {
+    fill:#FFF;
+}
+
+/*** Duo Strength Fixes End  ***/
