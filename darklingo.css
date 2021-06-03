@@ -3246,6 +3246,12 @@ html {
 
 
 
+/*** Personal Preferences ***/
+
+/* Darker Background color */
+._2Smk1::after, ._33APU, ._3lUbm, ._2VrUB, ._3ha9t, ._2Kxv6, ._2PVaI, ._17s2H, ._2nLk_, .FrL-W, .XO-AE, .l-V52, body {
+    background: var(--50);
+}
 
 
 
