@@ -3268,8 +3268,9 @@ html {
 }
 
 /* Fixes the color of broken skill links */
-.topOfTreeList a{
-    color: #FFF;
+.topOfTreeList a,
+.XPTotalAndLevel span {
+    color: #ddd !important;
 }
 
 /* XP Dialog Fixes */
