@@ -125,7 +125,7 @@
 
 /* Faded sides on Perfectly completed lessons */
 ._3FFs0 {
-    background: linear-gradient(90deg,#333,hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,0) 90%,#333);
+    background: linear-gradient(90deg, var(--50), hsla(0,0%,100%,0) 10%, hsla(0,0%,100%,0) 90%, var(--50));
 }
 
 
