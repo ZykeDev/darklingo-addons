@@ -2,7 +2,7 @@
 @name           Darklingo++ Fixes
 @namespace      github.com/openstyles/stylus
 @version        8.2.6
-@description    A Darklingo++ addon with fixes (8.2.6.4)
+@description    A Darklingo++ addon with fixes (8.2.6.5)
 @author         Noya
 @updateURL      https://github.com/ZykeDev/darklingo-mirror/blob/main/darklingo-addons.css
 ==/UserStyle== */
@@ -177,4 +177,5 @@
 }
 
 /*** Duo Strength Fixes End  ***/
+	
 }
