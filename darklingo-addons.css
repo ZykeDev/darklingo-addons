@@ -1,4 +1,14 @@
+/* ==UserStyle==
+@name           Darklingo++ Fixes
+@namespace      github.com/openstyles/stylus
+@version        8.2.6
+@description    A Darklingo++ addon with fixes (8.2.6.4)
+@author         Noya
+@updateURL      https://github.com/ZykeDev/darklingo-mirror/blob/main/darklingo-addons.css
+==/UserStyle== */
+
 /* Duplicated root so that the file can work even without the main darklingo.css */
+@-moz-document domain("duolingo.com") {
 :root {
 	--50: #181818;
 	--75: #1c1c1c;
@@ -125,9 +135,13 @@
 
 /* Faded sides on Perfectly completed lessons */
 ._3FFs0 {
-    background: linear-gradient(90deg, var(--50), hsla(0,0%,100%,0) 10%, hsla(0,0%,100%,0) 90%, var(--50));
+    background: linear-gradient(90deg, var(--50),hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,0) 90%, var(--50));
 }
 
+/* Make the Forum Navlink's backgrounds transparent */
+._26Aq_ {
+    background: none;
+}
 
 
 
@@ -163,3 +177,4 @@
 }
 
 /*** Duo Strength Fixes End  ***/
+}
