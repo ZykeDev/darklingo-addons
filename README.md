@@ -5,7 +5,7 @@
 An unauthorized mirror for Justin Ikeako's [Darklingo++ Userstyle](https://userstyles.org/styles/169205/darklingo) for Duolingo, with some added fixes for Duolingo-related addons (Slate style only).
 
 * Base Version: 20210518.14.53
-* Fixes Version: 820210619.19.07
+* Fixes Version: 20210619.19.07
 
 
 
