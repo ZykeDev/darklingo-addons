@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Darklingo++ Fixes
 @namespace      github.com/openstyles/stylus
-@version        20210720.17.23
+@version        20210720.18.51
 @description    A Darklingo++ addon with fixes
 @author         Noya
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-mirror/main/darklingo-addons.user.css
@@ -183,4 +183,31 @@
     }
 
     /*** Duo Strength Fixes End  ***/
+	
+	
+	
+	
+	/*** Temporary fixes until the baseline version is updated ***/
+
+	/* Lesson buttons */
+	._1yW4j, .WOZnx  {
+		outline-color: var(--200) !important;
+		--__internal__border-color: var(--200) !important;
+	}
+	
+	._1yW4j button::before {
+		background-color: var(--100) !important;
+		box-shadow: var(--200) 0px 2px 0px 0px !important;
+		outline-color: var(--200) !important;
+	}
+	
+	/* Button transition to/from the answer slot. Not currently working. */
+	.WOZnx:hover:not(:disabled):not(.LhRk3):not(._1V-dy)::after {
+		background-color: var(--hover);
+	}
+		
+
+	/*** Temporary Fixes End **/
+	
+
 }
