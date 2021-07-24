@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Darklingo++ Fixes
 @namespace      github.com/openstyles/stylus
-@version        20210721.13.23
+@version        20210724.15.03
 @description    A Darklingo++ addon with fixes
 @author         Noya
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-mirror/main/darklingo-addons.user.css
@@ -19,6 +19,8 @@
         --250: #383838;
         --300: #404040;
         --400: #505050;
+		--500: #606060;
+		--600: #707070;
 
         --50-overlay-light: #1c1c1c20;
         --50-overlay-medium: #1c1c1c40;
@@ -155,11 +157,15 @@
 
     /* Fixes the color of strength bars */
     .strengthBarBackground {
-      background-color: #4A4A4A;   
+	  background-color: var(--600);
     }
+	.strengthBar {
+		opacity: 0.75;
+	}
+
     .strengthValue {
       padding-right: 5px;
-      color: #9A9A9A;
+	  color: var(--50);
     }
 
     /* Fixes the color of broken skill links */
