@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Darklingo++ Fixes
 @namespace      github.com/openstyles/stylus
-@version        20210724.15.03
+@version        20210726.16.24
 @description    A Darklingo++ addon with fixes
 @author         Noya
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-mirror/main/darklingo-addons.user.css
@@ -138,7 +138,7 @@
 
     /* Faded sides on Perfectly completed lessons */
     ._3FFs0 {
-      background: linear-gradient(90deg, var(--50),hsla(0,0%,100%,0) 10%,hsla(0,0%,100%,0) 90%, var(--50));
+      background: linear-gradient(90deg, var(--50), hsla(0,0%,100%,0) 10%, hsla(0,0%,100%,0) 90%, var(--50));
     }
 
     /* Make the Forum Navlink's backgrounds transparent */
@@ -189,41 +189,6 @@
     }
 
     /*** Duo Strength Fixes End  ***/
-	
-	
-	
-	
-	/*** Temporary fixes until the baseline version is updated ***/
-
-	/* Lesson buttons */
-	.WOZnx  {
-		background: var(--100) !important;
-		outline-color: var(--200) !important;
-		--__internal__border-color: var(--200) !important;
-	}
-	
-	._1yW4j button::before {
-		background: var(--100) !important;
-		box-shadow: var(--200) 0px 2px 0px 0px !important;
-		outline-color: var(--200) !important;
-	}
-	
-	/* Matching pairs buttons */
-	.WOZnx:disabled::before {
-		background: var(--75) !important;
-	}
-	
-	.WOZnx:not(:disabled)::before {
-		background: var(--100) !important;
-	}
-	
-	/* Button transition to/from the answer slot. Not currently working. */
-	.WOZnx:hover:not(:disabled):not(.LhRk3):not(._1V-dy)::after {
-		background: var(--hover);
-	}
 		
-
-	/*** Temporary Fixes End **/
-	
 
 }
