@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Justin Ikeako
 @description    `<strong>Hey! 👋🏽</strong>Darklingo++ is a delightful switch on the default Duolingo UI. This style presents you with a <strong>Dark Mode</strong>, the ability to change the <strong>Theme Color</strong> , and it makes both leagues and the scrollbar optional. <i>(More to come in the future)</i>If you find anything that isn't themed correctly, feel free to tell me; feedback is always welcome! 😁 And if you <i>really</i> like this style or any of my others, you can <a href="https://paypal.me/justinikeako">donate</a> (only if you want to 🤗).Made with 💖 by <a href="https://userstyles.org/users/709142">Justin Ikeako</a>.`
-@version        20210726.3.34
+@version        20210820.16.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color custom-color "Custom Theme Color" #1F98D2
@@ -423,6 +423,8 @@ midnight "Midnight" <<<EOT 	--50: #05070a;
 	.related-posts,
 	._37HGt.G1JDk,
 	.site-footer,
+	._3OTNX,
+	._1zoL4,
 	._3_xiZ,
 	._3nU_m {
 		background-color: var(--75)
@@ -517,7 +519,9 @@ midnight "Midnight" <<<EOT 	--50: #05070a;
 	._2gnHr:disabled::after,
 	._2gnHr._28JSG::after,
 	._1qdLM::before,
+	._2cQin::before,
 	._1qdLM::after,
+	._2cQin::after,
 	.dropdown-menu,
 	.course-card,
 	._1IbT7,
@@ -708,6 +712,10 @@ midnight "Midnight" <<<EOT 	--50: #05070a;
 
 	._37HGt.G1JDk {
 		border-color: var(--50)
+	}
+
+	._3OTNX {
+		border-color: var(--75)
 	}
 
 	.status-board .course-status .phase-marker .phase-icon.success,
@@ -988,6 +996,7 @@ midnight "Midnight" <<<EOT 	--50: #05070a;
 	._1KaT4,
 	._1ZA9g,
 	._1VA3z,
+	._2nAgU,
 	._2Iddf,
 	._1uzYU,
 	._3h6Yu,
@@ -998,6 +1007,8 @@ midnight "Midnight" <<<EOT 	--50: #05070a;
 	._3TrlL,
 	._3xeFN,
 	._3pn9e,
+	._3mxWC,
+	._2cQin,
 	._15nlG,
 	._3kMVk,
 	._1ArOo,
@@ -1119,6 +1130,9 @@ midnight "Midnight" <<<EOT 	--50: #05070a;
 	._3hNKu,
 	._2iCsL,
 	._3KnwL,
+	._2s4Lh,
+	._2IZtO,
+	._2SDmF,
 	._2rUOh,
 	._3blqO,
 	._3Rqyw,
@@ -1433,12 +1447,17 @@ midnight "Midnight" <<<EOT 	--50: #05070a;
 		color: var(--primary)
 	}
 
+
 	._26Aq_ {
 		background: var(--100);
 		border-color: var(--200);
 		color: var(--secondary)
 	}
 
+	._3nCPn {
+		border-color: var(--200);
+		color: var(--tertiary)
+	}
 
 	[style="background: rgb(255, 255, 253) none repeat scroll 0% 0%; border-color: rgb(229, 229, 229); color: rgb(175, 175, 175);"],
 	[style="background: rgb(255, 255, 253); border-color: rgb(229, 229, 229); color: rgb(175, 175, 175);"] {
@@ -1500,8 +1519,12 @@ midnight "Midnight" <<<EOT 	--50: #05070a;
 
 	._26Aq_._35ADQ,
 	._26Aq_:active,
+	._3nCPn:active,
+	._3nCPn:focus,
+	._3nCPn:hover,
 	._26Aq_:focus,
 	._26Aq_:hover,
+	.AVekF,
 	.UQBJ_ {
 		border-color: var(--custom-color);
 		color: var(--custom-color)
@@ -1585,7 +1608,7 @@ midnight "Midnight" <<<EOT 	--50: #05070a;
 
 		--web-ui_button-background-color-disabled: var(--100);
 	  --web-ui_button-border-color-disabled: var(--200);
-	  --web-ui_button-color-disabled: var(--tertiary);
+	  --web-ui_button-color-disabled: var(--300);
 
 	  --web-ui_button-filter-hover: none;
 	}
@@ -1820,6 +1843,11 @@ midnight "Midnight" <<<EOT 	--50: #05070a;
 
 
 	/** Misc **/
+
+
+	._3FFs0 {
+		background: linear-gradient(90deg, var(--100), transparent 10%, transparent 90%, var(--100));
+	}
 
 	._12w2e,
 	._1lI5v,
