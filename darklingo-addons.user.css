@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Darklingo++ Fixes
 @namespace      github.com/openstyles/stylus
-@version        20210726.16.24
+@version        20211007.11.36
 @description    A Darklingo++ addon with fixes
 @author         Noya
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-mirror/main/darklingo-addons.user.css
@@ -124,7 +124,11 @@
 
         --custom-color: #1F98D2;
         --custom-color-translucent-light: #1F98D220;
-        --custom-color-translucent-medium: #1F98D240
+        --custom-color-translucent-medium: #1F98D240;
+		
+		/* New color for legendary elements */
+		--legendary: #a9a1ff;
+			
       }
 
 
@@ -151,6 +155,20 @@
 	._2GPX6 {
 		background-color: rgba(0, 0, 0, 0) !important;
 	}
+	
+	/* New Legendary text */
+	._3HhhB._2NolF._275sd._1ZefG._26hHl._1eyFy._26QYy {
+		color: var(--legendary);
+	}
+	
+	/* Loading page */
+	.DvBxN, ._3IvEG, ._3IGQx, ._18W4a, .xtPuL {
+		background-color: var(--50);
+		color: var(--primary);
+	}
+}
+	
+	
 
 
     /*** Duo Strength Fixes  ***/
@@ -191,4 +209,4 @@
     /*** Duo Strength Fixes End  ***/
 		
 
-}
+
