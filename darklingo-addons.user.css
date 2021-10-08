@@ -166,12 +166,7 @@
 		background-color: var(--50);
 		color: var(--primary);
 	}
-}
-	
-	
-
-
-    /*** Duo Strength Fixes  ***/
+	/*** Duo Strength Fixes  ***/
 
     /* Fixes the color of strength bars */
     .strengthBarBackground {
@@ -207,6 +202,4 @@
     }
 
     /*** Duo Strength Fixes End  ***/
-		
-
-
+}
