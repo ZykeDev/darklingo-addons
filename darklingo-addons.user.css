@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Darklingo++ Fixes
 @namespace      github.com/openstyles/stylus
-@version        20211008.15.07
+@version        20211019.11.56
 @description    A Darklingo++ addon with fixes
 @author         Noya
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-mirror/main/darklingo-addons.user.css
@@ -184,6 +184,11 @@
     .topOfTreeList a,
     .XPTotalAndLevel span {
         color: #ddd !important;
+    }
+	
+    /* Fix greyed out answer texts */
+    ._2NFt_ {
+        color: var(--primary);
     }
 
 
