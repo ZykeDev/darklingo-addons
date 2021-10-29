@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name           Darklingo++ Fixes
 @namespace      github.com/openstyles/stylus
-@version        20211019.11.56
-@description    A Darklingo++ addon with fixes
+@version        20211029.15.43
+@description    A Darklingo++ extension with fixes
 @author         Noya
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-mirror/main/darklingo-addons.user.css
 ==/UserStyle== */
@@ -35,6 +35,11 @@
         --red-on-bg: #471919;
         --green-on-bg: #2b3d1c;
 
+        /* New SVGs  */
+        --characters: url(https://d35aaqx5ub95lt.cloudfront.net/vendor/0172b83513c04cbae78c47adafaf93e7.svg);
+        --legendaryCrownEmpty: url(https://d35aaqx5ub95lt.cloudfront.net/images/crowns/00ef38a541ef4b6a08f1108991ecfd92.svg);
+        --legendaryCrown: url(https://d35aaqx5ub95lt.cloudfront.net/images/crowns/3b0e3903160a93f33f3688a92e4654a2.svg);
+		
         --learn: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/learn.svg);
         --stories: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/stories.svg);
         --discuss: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/discuss.svg);
@@ -130,6 +135,28 @@
         --legendary: #a9a1ff;	
     }
 
+	
+    /* New SVGs (characters and crowns). Ignoring DL++ sprites. */
+
+    [src="//d35aaqx5ub95lt.cloudfront.net/vendor/0172b83513c04cbae78c47adafaf93e7.svg"] {
+        background-image: var(--characters);
+    }
+
+    [src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/3b0e3903160a93f33f3688a92e4654a2.svg"] {
+        background-image: var(--legendaryCrown);
+    }
+    [src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/00ef38a541ef4b6a08f1108991ecfd92.svg"] {
+    	background-image: var(--legendaryCrownEmpty);
+    }
+
+    [src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/f2e84728e922b45ed79761f3f5002166.svg"],
+    [src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/385a104c7a2d5c483117b157cd0182b7.svg"] {
+    	background-image: none !important;
+    	height: 38px !important;
+    	width: 38px !important;
+    	padding: 0 !important;
+    }
+	
 
 
     /*** Personal Preferences ***/
@@ -186,10 +213,11 @@
         color: #ddd !important;
     }
 	
-    /* Fix greyed out answer texts */
-    ._2NFt_ {
-        color: var(--primary);
-    }
+	/* Fix greyed out answer texts */
+	
+	._2NFt_ {
+		color: var(--primary);
+	}
 
 
     /* XP Dialog Fixes */
