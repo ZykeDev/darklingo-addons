@@ -6,7 +6,8 @@ Base Version* | Fixes Version
 
 
 
-An unauthorized mirror for Justin Ikeako's [Darklingo++ Userstyle](https://userstyles.org/styles/169205/darklingo) for Duolingo, with some added fixes for Duolingo-related addons (Slate style only).
+An unauthorized mirror for Justin Ikeako's [Darklingo++ Userstyle](https://userstyles.org/styles/169205/darklingo) for Duolingo.
+The Fixes Version inclused temporary fixes for updated features that the baseline version has yet to address, as well as some improvements for Duolingo-related addons (Slate style only).
 
 * Base Version: 20210826.20.55
 * Fixes Version: 20211019.11.56
