@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Darklingo++ Fixes
 @namespace      github.com/openstyles/stylus
-@version        20211029.15.43
+@version        20211030.16.18
 @description    A Darklingo++ extension with fixes
 @author         Noya
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-mirror/main/darklingo-addons.user.css
@@ -160,9 +160,26 @@
 
 
     /*** Personal Preferences ***/
+	
+    /* Remove adblock related box */
+    ._1UOwI {
+        display: none;	
+    }
 
-    /* Darker Background color */
-    ._2Smk1::after, ._33APU, ._3lUbm, ._2VrUB, ._3ha9t, ._2Kxv6, ._2PVaI, ._17s2H, ._2nLk_, .FrL-W, .XO-AE, .l-V52, body {
+    /* Darker Background color for better contrast */
+    ._2Smk1::after, 
+    ._33APU, 
+    ._3lUbm, 
+    ._2VrUB, 
+    ._3ha9t, 
+    ._2Kxv6, 
+    ._2PVaI, 
+    ._17s2H, 
+    ._2nLk_, 
+    .FrL-W, 
+    .XO-AE, 
+    .l-V52, 
+    body {
         background: var(--50);
     }
 
@@ -176,8 +193,7 @@
         background: none;
     }
 	
-	
-    /* Unify background colors in the User profile page */
+    /* Use the same background colors in the User profile page */
     ._2GPX6 {
         background-color: rgba(0, 0, 0, 0) !important;
     }
@@ -188,10 +204,32 @@
     }
 
     /* Loading page */
-    .DvBxN, ._3IvEG, ._3IGQx, ._18W4a, .xtPuL {
+    .DvBxN, 
+    ._3IvEG,
+    ._3IGQx, 
+    ._18W4a, 
+    .xtPuL {
         background-color: var(--50);
         color: var(--primary);
     }
+	
+    /* Mistakes practice button  */
+    ._3shLX {
+        --outline-color: var(--200);
+        background: #383838;
+    }
+	
+    /* Media Buttons */
+    ._3HHNB:after {
+        filter: initial;
+        background-color: var(--100);
+        border-color: var(--200);
+        --web-ui_button-background-color: var(--100);
+        --web-ui_button-border-color: var(--200);
+        --web-ui_button-color: var(--secondary);
+    }	
+	
+	
     /*** Duo Strength Fixes  ***/
 
     /* Fixes the color of strength bars */
@@ -210,14 +248,13 @@
     /* Fixes the color of broken skill links */
     .topOfTreeList a,
     .XPTotalAndLevel span {
-        color: #ddd !important;
+        color: var(--custom-color) !important;
     }
 	
-	/* Fix greyed out answer texts */
-	
-	._2NFt_ {
-		color: var(--primary);
-	}
+    /* Fix greyed out answer texts */	
+    ._2NFt_ {
+        color: var(--primary);
+    }
 
 
     /* XP Dialog Fixes */
