@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Justin Ikeako
 @description    `<strong>Hey! 👋🏽</strong>Darklingo++ is a delightful switch on the default Duolingo UI. This style presents you with a <strong>Dark Mode</strong>, the ability to change the <strong>Theme Color</strong> , and it makes both leagues and the scrollbar optional. <i>(More to come in the future)</i>If you find anything that isn't themed correctly, feel free to tell me; feedback is always welcome! 😁 And if you <i>really</i> like this style or any of my others, you can <a href="https://paypal.me/justinikeako">donate</a> (only if you want to 🤗).Made with 💖 by <a href="https://userstyles.org/users/709142">Justin Ikeako</a>.`
-@version        20210826.20.55
+@version        20211102.5.40
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color custom-color "Custom Theme Color" #1F98D2
@@ -396,7 +396,10 @@ midnight "Midnight" <<<EOT 	--50: #05070a;
 	
 	--custom-color: /*[[custom-color]]*/;
 	--custom-color-translucent-light: /*[[custom-color]]*/20;
-	--custom-color-translucent-medium: /*[[custom-color]]*/40
+	--custom-color-translucent-medium: /*[[custom-color]]*/40;
+
+
+	--purple-crown: url(https://raw.githubusercontent.com/justinikeako/darklingo/738ca913dd4fddcc65c5c10898975e0d91b6e778/assets/crown-purple.svg)
 }
 
 
@@ -424,6 +427,7 @@ midnight "Midnight" <<<EOT 	--50: #05070a;
 ._37HGt.G1JDk,
 .site-footer,
 ._3OTNX,
+.QS3B0,
 ._1zoL4,
 ._3_xiZ,
 ._3nU_m {
@@ -545,9 +549,9 @@ body {
 ._1GNtl ._3FISW,
 ._1uYPT ._2Amjo,
 ._2NET4 ._1MoE-,
-.VTYcX,
 ._304vr,
 ._3xJLZ,
+.VTYcX,
 .eP5n4,
 .brXUB {
 	background-color: var(--tertiary)
@@ -705,6 +709,10 @@ body {
 ._31-xb,
 ._14fD_ {
 	background-color: var(--0-overlay)
+}
+
+._3Uw7w {
+    background-color: #222151
 }
 
 
@@ -1021,6 +1029,7 @@ footer ul.footer li:first-child,
 ._37Hi-,
 ._2cZ9-,
 .SEEvZ,
+.UMzUz,
 .YBCQI,
 .MLyVF,
 .PqXfk,
@@ -1128,6 +1137,7 @@ h1 {
 ._2NOG7,
 ._3YDP5,
 ._3hNKu,
+._1cqUe,
 ._2iCsL,
 ._3KnwL,
 ._2s4Lh,
@@ -1318,6 +1328,7 @@ a {
 ._3QwaZ.mKH7H ._3cvJx,
 .mKH7H ._1_ZCT,
 ._3QwaZ.mKH7H,
+._1xOpZ,
 ._34Jmg,
 ._3NwXb {
 	color: var(--green-secondary)
@@ -1345,6 +1356,10 @@ a {
 
 ._3iVqs[data-test="start-lesson"] {
 	color: #fff
+}
+
+._2N9_o {
+	color: #fff8
 }
 
 /* Streak Text */
@@ -1401,6 +1416,7 @@ a {
 ._1wJYQ::after,
 ._2OOOF::after,
 ._3IWeV::after,
+._3HHNB:after,
 .gEPmD::after,
 ._2V4l4,
 ._1K9ZC,
@@ -1590,6 +1606,8 @@ a {
 	color: var(--primary)
 }
 
+
+._2TTO0 .WOZnx,
 ._2NolF {
   --web-ui_button-background-color: var(--custom-color);
   --web-ui_button-border-color: var(--dark-translucent-400);
@@ -1602,6 +1620,7 @@ a {
   --web-ui_button-color: var(--secondary);
 }
 
+.WOZnx.LhRk3:not(._1rl91), .WOZnx:disabled:not(._1rl91),
 ._1O290 {
 	--web-ui_button-background-color: var(--100);
   --web-ui_button-border-color: var(--200);
@@ -1637,10 +1656,45 @@ a {
   --web-ui_button-color: var(--custom-color);
 }
 
+._3zRHo {
+	--web-ui_button-color: #fff;
+	--web-ui_button-background-color: transparent;
+	--web-ui_button-background-color-disabled: transparent;
+	--web-ui_button-border-color: rgba(0,0,0,0.2);
+	--web-ui_button-border-color-disabled: rgba(0,0,0,0.08);
+	--web-ui_button-color-disabled: hsla(0,0%,100%,0.4);
+	--web-ui_button-filter-hover: opacity(0.8);
+}
+
+._26QYy {
+    --web-ui_button-background-color: #fff;
+    --web-ui_button-background-color-disabled: hsla(0,0%,100%,0.4);
+    --web-ui_button-border-color: hsla(0,0%,100%,0.5);
+    --web-ui_button-color: #5c6cfc;
+    --web-ui_button-color-disabled: #5c6cfc;
+    --web-ui_button-filter-hover: none;
+}
+
+.tEvKV {
+    --web-ui_button-background-color: #5c6cfc;
+    --web-ui_button-background-color-disabled: rgba(92,108,252,0.4);
+    --web-ui_button-border-color: #4755df;
+    --web-ui_button-color: #fff;
+    --web-ui_button-color-disabled: #fff;
+    --web-ui_button-filter-hover: none;
+}
+
 ._2NolF::before {
 	box-shadow: var(--dark-translucent-600) 0 var(--__internal__lip-width) 0, var(--web-ui_button-background-color) 0 var(--__internal__lip-width) 0;
 }
 
+._2TTO0 .WOZnx::before {
+	box-shadow: 0 2px 0 var(--__internal__border-color), 0 2px 0 var(--custom-color);
+}
+
+._26QYy._2NolF::before {
+	box-shadow: 0 var(--__internal__lip-width) 0 var(--web-ui_button-border-color);
+}
 
 
 
@@ -2145,6 +2199,11 @@ html {
   background-color: var(--brand-purple)
 }
 
+._1HSah {
+    background-color: #a9a1ff;
+	background-image: url(https://d35aaqx5ub95lt.cloudfront.net/images/770a692eec622490ee01f106527ce6e9.svg)
+}
+
 ._2zaxB,
 .a-58R,
 .wdzvP {
@@ -2452,6 +2511,8 @@ html {
 ._3JN0P[src="//d35aaqx5ub95lt.cloudfront.net/images/ba45a1b38107480e030a0a06fc13d6ac.svg"],
 ._3Ovgb[src="//d35aaqx5ub95lt.cloudfront.net/images/5bc1dd6b146c2a46a564e72aed686c31.svg"],
 ._2956R[src="//d35aaqx5ub95lt.cloudfront.net/images/843ccd179178c2e2731c8cc850d09c53.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/4fe661b8df4bfad97709417d62b83422.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/dc4851466463c85bbfcaaaaae18e1925.svg"],
 [src="/node_modules/web-ui/dist/esm/src/images/fafe27c9c1efa486f49f87a3d691a66e.svg"],
 [src="//duolingo-forum-web.duolingo.com/assets/e2a5aaf36ea4bfed992d57e24f6e1699.svg"],
 [src="//duolingo-forum-web.duolingo.com/assets/15bb89c2cb236f203632cbfacc910733.svg"],
@@ -2466,6 +2527,7 @@ html {
 [src="//d35aaqx5ub95lt.cloudfront.net/vendor/c386112b00c11a021fde00ca0bd8d038.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/vendor/b3ede3d53c932ee30d981064671c8032.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/vendor/a72cd95b77171e6e00de85fc7389da67.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/images/93586c9e933781ed90e75c15a6b4a185.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/checkpoint-castle-unlocked.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/checkpoint-castle-complete.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/duolingo-plus-logo-feather.svg"],
@@ -2525,6 +2587,7 @@ html {
 ._3Ovgb[src="//d35aaqx5ub95lt.cloudfront.net/images/5bc1dd6b146c2a46a564e72aed686c31.svg"],
 ._2956R[src="//d35aaqx5ub95lt.cloudfront.net/images/843ccd179178c2e2731c8cc850d09c53.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/f754af1bf4bf03790cc2a70fe3c5a245.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/images/93586c9e933781ed90e75c15a6b4a185.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/checkpoint-castle-complete.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/checkpoint-castle-unlocked.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/duolingo-plus-logo-feather.svg"],
@@ -2574,6 +2637,8 @@ html {
 [src="/node_modules/web-ui/dist/esm/src/images/icons/c386112b00c11a021fde00ca0bd8d038.svg"],
 [src="/node_modules/web-ui/dist/esm/src/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
 [src="/node_modules/web-ui/dist/esm/src/images/icons/398e4298a3b39ce566050e5c041949ef.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/dc4851466463c85bbfcaaaaae18e1925.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/4fe661b8df4bfad97709417d62b83422.svg"],
 [src="/node_modules/web-ui/dist/esm/src/images/fafe27c9c1efa486f49f87a3d691a66e.svg"],
 [src="//duolingo-forum-web.duolingo.com/assets/161467c702bb90ba0b448db4d6e835c4.svg"],
 [src="//duolingo-forum-web.duolingo.com/assets/d078166cbc81ac85c4dcce01946c8177.svg"],
@@ -2627,11 +2692,11 @@ html {
 	background-size: 200%
 }
 
-
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/c386112b00c11a021fde00ca0bd8d038.svg"],
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
 [src="//duolingo-forum-web.duolingo.com/web-ui/images/icons/15d397666ac937fc2ddc375634cbe14e.svg"],[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/c386112b00c11a021fde00ca0bd8d038.svg"],
-[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/cfd882b7f367a1971c52d2da3b8c7f1e.svg"],[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/cfd882b7f367a1971c52d2da3b8c7f1e.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/a6efac3e4a5121eec6cdb733194952c1.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/8220ba27de1710bb0d20837f2c16de36.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/d5da7539ff6abe13a422c11f1178f1e9.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/99e564726836ff5a0b7269063bbf4b1e.svg"],
@@ -2777,7 +2842,8 @@ html {
 	padding: 32px 32px 0 0
 }
 
-._3cX2U[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/aed279fcbad509208b45ca7a17f3e8dc.svg"] {
+._3cX2U[src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/aed279fcbad509208b45ca7a17f3e8dc.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/dc4851466463c85bbfcaaaaae18e1925.svg"] {
 	padding: 32px 32px 0 0 !important
 }
 
@@ -2793,7 +2859,8 @@ html {
 [src="//duolingo-forum-web.duolingo.com/assets/e2a5aaf36ea4bfed992d57e24f6e1699.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/vendor/398e4298a3b39ce566050e5c041949ef.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/398e4298a3b39ce566050e5c041949ef.svg"],
-[src="/web-ui/images/icons/4fa0baa7df59544c7cf33fa4ef9a260c.svg"] {
+[src="/web-ui/images/icons/4fa0baa7df59544c7cf33fa4ef9a260c.svg"],
+.eoQRg {
 	padding: 34px 34px 0 0 !important
 }
 
@@ -2818,8 +2885,14 @@ html {
 	padding: 36px 36px 0 0
 }
 
+/* 38 x 38 */
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/f2e84728e922b45ed79761f3f5002166.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/3b0e3903160a93f33f3688a92e4654a2.svg"] {
+	padding: 38px 38px 0 0
+}
 
 /* 39 x 32 */
+[src="//d35aaqx5ub95lt.cloudfront.net/images/93586c9e933781ed90e75c15a6b4a185.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/dumbbell-blue.svg"] {
 	padding: 32px 39px 0 0
 }
@@ -2854,6 +2927,12 @@ html {
 /* 52 x 42*/
 ._4CXHr ._18sNN {
 	padding: 42px 52px 0 0
+}
+
+
+/* 52 x 52*/
+._18sNN[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/4fe661b8df4bfad97709417d62b83422.svg"] {
+	padding: 52px 52px 0 0
 }
 
 
@@ -3322,6 +3401,14 @@ html {
 	background-position: 66.66% center
 }
 
+
+/* Purple Crown */
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/4fe661b8df4bfad97709417d62b83422.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/dc4851466463c85bbfcaaaaae18e1925.svg"] {
+	background-image: var(--purple-crown)
+}
+
+
 /* Crack */
 ._1m7gz {
 	background-image: var(--crack)
@@ -3355,6 +3442,7 @@ html {
 
 
 /* Dumbell */
+[src="//d35aaqx5ub95lt.cloudfront.net/images/93586c9e933781ed90e75c15a6b4a185.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/dumbbell-blue.svg"] {
 	background-image: url(https://raw.githubusercontent.com/justinikeako/darklingo/38655d6499226dc3ba3b42768cb4d6cc60d18708/assets/dumbell.svg)
 }
@@ -3585,6 +3673,22 @@ html {
 }
 
 
+/* Crowns */
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/f2e84728e922b45ed79761f3f5002166.svg"] {
+	background-image: url(https://d35aaqx5ub95lt.cloudfront.net/images/crowns/f2e84728e922b45ed79761f3f5002166.svg)
+}
+
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/3b0e3903160a93f33f3688a92e4654a2.svg"] {
+	background-image: url(https://d35aaqx5ub95lt.cloudfront.net/images/crowns/3b0e3903160a93f33f3688a92e4654a2.svg)
+}
+
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/00ef38a541ef4b6a08f1108991ecfd92.svg"] {
+	background-image: url(https://d35aaqx5ub95lt.cloudfront.net/images/crowns/00ef38a541ef4b6a08f1108991ecfd92.svg)
+}
+
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/385a104c7a2d5c483117b157cd0182b7.svg"] {
+	background-image: url(https://d35aaqx5ub95lt.cloudfront.net/images/crowns/385a104c7a2d5c483117b157cd0182b7.svg)
+}
 
 
 
@@ -3592,12 +3696,20 @@ html {
 
 
 
-/* Masks */
+
+
+/** Masks **/
 
 /* Setup */
+
+._18sNN[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/4fe661b8df4bfad97709417d62b83422.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/dc4851466463c85bbfcaaaaae18e1925.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/f754af1bf4bf03790cc2a70fe3c5a245.svg"] {
 	-webkit-mask-image: var(--mask-image);
-	mask-image: var(--mask-image)
+	mask-image: var(--mask-image);
+	
+	-webkit-mask-position: var(--mask-position);
+	mask-position: var(--mask-position);
 }
 
 
@@ -3619,8 +3731,14 @@ html {
 	background-color: var(--custom-color)
 }
 
+
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/dc4851466463c85bbfcaaaaae18e1925.svg"],
 .sJl8N._2mDNn::before {
 	background-color: var(--100)
+}
+
+._18sNN[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/4fe661b8df4bfad97709417d62b83422.svg"] {
+	background-color: #222151
 }
 
 ._3dRoN::before,
@@ -3632,6 +3750,28 @@ html {
 ._3dRoN::before,
 .sJl8N::before {
 	background-image: none;
+}
+
+
+
+
+
+
+
+
+
+/* Purple Crown */
+._18sNN[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/4fe661b8df4bfad97709417d62b83422.svg"],
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/dc4851466463c85bbfcaaaaae18e1925.svg"] {
+	--mask-image: var(--purple-crown);
+	--mask-position: right;
+	
+	-webkit-mask-size: cover;
+}
+
+.eoQRg {
+	--mask-image: unset;
+	background-color: unset
 }
 
 
