@@ -9,8 +9,7 @@ Base Version* | Fixes Version
 An unauthorized mirror for Justin Ikeako's [Darklingo++ Userstyle](https://userstyles.org/styles/169205/darklingo) for Duolingo.
 The Fixes Version inclused temporary fixes for updated features that the baseline version has yet to address, as well as some improvements for Duolingo-related addons (Slate style only).
 
-* Base Version: 20210826.20.55
-* Fixes Version: 20211030.16.18
+* Mirror Version: 20210826.20.55
 
 
 
