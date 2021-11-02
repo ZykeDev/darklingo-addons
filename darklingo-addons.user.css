@@ -2,7 +2,7 @@
 @name           Darklingo++ Fixes
 @namespace      https://github.com/ZykeDev
 @author         Noya
-@version        20211102.18.00
+@version        20211102.19.00
 @description    A Darklingo++ extension with fixes
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-mirror/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-mirror
@@ -39,14 +39,12 @@
 
 		/* New SVGs  */
 		--characters: url(https://d35aaqx5ub95lt.cloudfront.net/vendor/0172b83513c04cbae78c47adafaf93e7.svg);
-		--legendaryCrownEmpty: url(https://d35aaqx5ub95lt.cloudfront.net/images/crowns/00ef38a541ef4b6a08f1108991ecfd92.svg);
-		--legendaryCrown: url(https://d35aaqx5ub95lt.cloudfront.net/images/crowns/3b0e3903160a93f33f3688a92e4654a2.svg);
+		
 		--learn: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/learn.svg);
 		--stories: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/stories.svg);
 		--discuss: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/discuss.svg);
 		--shop: url(https://raw.githubusercontent.com/justinikeako/darklingo/6d4dde9ce1bb00b4adb08df487ffc0118b0bf8f6/assets/slate/shop.svg);
 		--profile: url(https://raw.githubusercontent.com/justinikeako/darklingo/6d4dde9ce1bb00b4adb08df487ffc0118b0bf8f6/assets/slate/profile.svg);
-		--bell: url(https://raw.githubusercontent.com/justinikeako/darklingo/6d4dde9ce1bb00b4adb08df487ffc0118b0bf8f6/assets/slate/bell.svg);
 		--more: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/more.svg);
 
 		--dictionary: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/dictionary.svg);
@@ -59,6 +57,7 @@
 		--streak-flame: url(https://raw.githubusercontent.com/justinikeako/darklingo/5beca38e0108a786969ba2e02a307ca45fa98a5b/assets/slate/streak-flame-empty.svg);
 		--lingot: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/lingot.svg);
 		--lingot-singular: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/lingot.svg);
+		--bell: url(https://raw.githubusercontent.com/justinikeako/darklingo/1fcaba1cb04e12f3be2246d3c64633adc69d7f12/assets/slate/bell.svg);
 
 		--crack: url(https://raw.githubusercontent.com/justinikeako/darklingo/6a1ff7a0744955932e82fe467eadf9f946bf3b0a/assets/slate/crack.svg);
 
@@ -100,7 +99,7 @@
 
 		--locked-badge: brightness(0.4) contrast(2) brightness(0.4);
 		--locked-lesson: brightness(0.475) contrast(1.5) brightness(0.8);
-		--locked-story: brightness(0.5) contrast(1.5) brightness(0.8);
+		--locked-story: brightness(0.5) contrast(1.5) brightness(0.8); 
 
 		--hover: var(--150);
 
@@ -132,7 +131,6 @@
 		--custom-color-translucent-light: #1F98D220;
 		--custom-color-translucent-medium: #1F98D240;
 
-		/* New color for legendary elements */
 		--legendary: #a9a1ff;
 	}
 
@@ -142,22 +140,6 @@
 		background-image: var(--characters);
 	}
 
-	[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/3b0e3903160a93f33f3688a92e4654a2.svg"] {
-		background-image: var(--legendaryCrown);
-	}
-	[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/00ef38a541ef4b6a08f1108991ecfd92.svg"] {
-		background-image: var(--legendaryCrownEmpty);
-	}
-
-	[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/f2e84728e922b45ed79761f3f5002166.svg"],
-	[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/385a104c7a2d5c483117b157cd0182b7.svg"] {
-		background-image: none !important;
-		height: 38px !important;
-		width: 38px !important;
-		padding: 0 !important;
-	}
-
-	
 	
 
 	/*** Personal Preferences ***/
@@ -198,11 +180,12 @@
 		background-color: rgba(0, 0, 0, 0) !important;
 	}
 
-	/* New Legendary text */
+	/* New Legendary text (might no longer be needed)
 	._3HhhB._2NolF._275sd._1ZefG._26hHl._1eyFy._26QYy {
 		color: var(--legendary);
-	}
-
+	} */
+  
+	
 	/* Loading page */
 	.DvBxN,
 	._3IvEG,
@@ -217,16 +200,6 @@
 	._3shLX {
 		--outline-color: var(--200);
 		background: #383838;
-	}
-
-	/* Media Buttons */
-	._3HHNB:after {
-		filter: initial;
-		background-color: var(--100);
-		border-color: var(--200);
-		--web-ui_button-background-color: var(--100);
-		--web-ui_button-border-color: var(--200);
-		--web-ui_button-color: var(--secondary);
 	}
 
 
