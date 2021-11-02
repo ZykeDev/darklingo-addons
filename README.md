@@ -1,4 +1,4 @@
-# Darklingo++ Mirror + Custom Fixes
+# Darklingo++ Mirror & Custom Fixes
 
 Base Version* | Fixes Version
 ------------ | -------------
