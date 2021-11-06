@@ -6,6 +6,6 @@ Base Version | Fixes Version
 
 
 
-An additional Userstyle with temporary fixes for updated features that the baseline version has yet to address, as well as some improvements for Duolingo-related addons (Slate style only).
+An Userstyle with custom, temporary fixes to address updated features that the baseline version has yet to implement, as well as some improvements for Duolingo-related addons (Slate style only).
 
 
