@@ -2,12 +2,12 @@
 @name           Darklingo++ Fixes
 @namespace      https://github.com/ZykeDev
 @author         Noya
-@version        20211102.19.00
+@version        20211113.13.42
 @description    A Darklingo++ extension with fixes
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-mirror/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-mirror
 @supportURL  	https://github.com/ZykeDev/darklingo-mirror/issues
-@license	CC BY-NC-SA 4.0
+@license	    CC BY-NC-SA 4.0
 ==/UserStyle== */
 
 @-moz-document domain("duolingo.com") {
@@ -200,6 +200,15 @@
 	._3shLX {
 		--outline-color: var(--200);
 		background: #383838;
+	}
+	
+	/* Loading button animation background on lesson completion */
+	._35QY2,
+	._3jIlr,
+	.f2zGP,
+	._18W4a,
+	.XtPuL {
+		background-color: rgba(0, 0, 0, 0);
 	}
 
 
