@@ -1,5 +1,4 @@
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/ZykeDev/darklingo-mirror?color=%2300adad&label=version&sort=semver&style=for-the-badge)
-
+![GitHub release](https://img.shields.io/github/v/release/ZykeDev/darklingo-mirror?color=%2300adad&label=Version&sort=semver&style=for-the-badge)
 # Darklingo++ Custom Fixes 
 
 
