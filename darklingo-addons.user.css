@@ -2,7 +2,7 @@
 @name           Darklingo++ Fixes
 @namespace      https://github.com/ZykeDev
 @author         Noya
-@version        1.1.0
+@version        1.1.1
 @description    A Darklingo++ extension with fixes (and custom choices). Baseline version: 20211102.5.40
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-addons
@@ -39,6 +39,7 @@
 
 		/* New SVGs  */
 		--characters: url(https://d35aaqx5ub95lt.cloudfront.net/vendor/0172b83513c04cbae78c47adafaf93e7.svg);
+		--characters-color: url(https://d35aaqx5ub95lt.cloudfront.net/vendor/80a60f598d6a6b0493aeb4d7b93fc0e3.svg);
 		
 		--learn: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/learn.svg);
 		--stories: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/stories.svg);
@@ -138,6 +139,9 @@
 	/* New SVGs (characters and crowns). Ignoring DL++ sprites. */
 	[src="//d35aaqx5ub95lt.cloudfront.net/vendor/0172b83513c04cbae78c47adafaf93e7.svg"] {
 		background-image: var(--characters);
+	}
+	[src="//d35aaqx5ub95lt.cloudfront.net/vendor/80a60f598d6a6b0493aeb4d7b93fc0e3.svg"] {
+		background-image: var(--characters-color);
 	}
 
 	
