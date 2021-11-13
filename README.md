@@ -1,6 +1,6 @@
 # Darklingo++ Custom Fixes
 
-![GitHub release](https://img.shields.io/github/v/release/ZykeDev/darklingo-mirror?color=%2300adad&label=Version&sort=semver&style=for-the-badge)
+![GitHub release](https://img.shields.io/github/v/release/ZykeDev/darklingo-fixes?color=%2300adad&label=Version&sort=semver&style=for-the-badge)
  
 Base Version | Fixes Version
 ------------ | -------------
