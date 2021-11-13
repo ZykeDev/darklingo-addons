@@ -14,4 +14,6 @@ An Userstyle with custom, temporary fixes to address updated features that the b
 
 We recently switched to [semver](semver.org) versioning, which will likely require a force-update on the user-end.
 
+<br>
 
+_License: CC BY-NC-SA 4.0_
