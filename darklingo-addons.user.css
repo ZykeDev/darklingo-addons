@@ -2,7 +2,7 @@
 @name           Darklingo++ Fixes
 @namespace      https://github.com/ZykeDev
 @author         Noya
-@version        1.0.0
+@version        1.0.1
 @description    A Darklingo++ extension with fixes (and custom choices).
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-mirror/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-mirror
@@ -205,9 +205,7 @@
 	/* Loading button animation background on lesson completion */
 	._35QY2,
 	._3jIlr,
-	.f2zGP,
-	._18W4a,
-	.XtPuL {
+	.f2zGP {
 		background-color: rgba(0, 0, 0, 0);
 	}
 
