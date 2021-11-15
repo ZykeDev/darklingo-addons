@@ -1,8 +1,8 @@
 /* ==UserStyle==
-@name           Darklingo++ Fixes
+@name           Darklingo++ Addons
 @namespace      https://github.com/ZykeDev
 @author         Noya
-@version        1.1.1
+@version        1.1.2
 @description    A Darklingo++ extension with fixes (and custom choices). Baseline version: 20211102.5.40
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-addons
@@ -11,7 +11,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("duolingo.com") {
-	/* Duplicated root to make files work even without the main darklingo.css */
+	/* Duplicated root to make the userstyle work even without the main darklingo.css */
 	:root {
 		--50: #181818;
 		--75: #1c1c1c;
@@ -184,10 +184,6 @@
 		background-color: rgba(0, 0, 0, 0) !important;
 	}
 
-	/* New Legendary text (might no longer be needed)
-	._3HhhB._2NolF._275sd._1ZefG._26hHl._1eyFy._26QYy {
-		color: var(--legendary);
-	} */
   
 	
 	/* Loading page */
@@ -212,10 +208,13 @@
 	.f2zGP {
 		background-color: rgba(0, 0, 0, 0);
 	}
+}
+	
+@-moz-document domain("duolingo.com") {
+	
+	/*** Duo Strength Extension Fixes  ***/
 
-
-	/*** Duo Strength Fixes  ***/
-	/* Fixes the color of strength bars */
+	/* Darkens the color of strength bars */
 	.strengthBarBackground {
 		background-color: var(--600);
 	}
@@ -252,6 +251,4 @@
 	#labels {
 		fill: #FFF;
 	}
-
-	/*** Duo Strength Fixes End  ***/
 }
