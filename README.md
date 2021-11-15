@@ -14,11 +14,11 @@ An Userstyle with custom, temporary fixes to address updated features that the b
 > **14/11 Update**: We recently switched to [semver](semver.org) versioning, which will likely require a force-update on the user-end.
 
 
-License: **CC BY-NC-SA 4.0**
-
-<br>
-
 ## Contributing
 
 Is there a Duolingo Addon or Extension that doesn't work well with the Darklingo++ Userstyle? Feel free to file an [issue](https://github.com/ZykeDev/darklingo-addons/issues) letting me know.
 If you plan on contributing youtself, please make sure to read the [Contribution Guidelines](CONTRIBUTING.md) and [Contributor Code of Conduct](CODE_OF_CONDUCT.md) first.
+
+<br>
+
+License: **CC BY-NC-SA 4.0**
