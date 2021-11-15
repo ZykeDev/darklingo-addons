@@ -11,8 +11,14 @@ Base Version | Fixes Version
 An Userstyle with custom, temporary fixes to address updated features that the baseline version has yet to implement, as well as some improvements for Duolingo-related addons (Slate style only).
 <br>
 
-We recently switched to [semver](semver.org) versioning, which will likely require a force-update on the user-end.
+> **14/11 Update**: We recently switched to [semver](semver.org) versioning, which will likely require a force-update on the user-end.
+
+
+License: **CC BY-NC-SA 4.0**
 
 <br>
 
-_License: CC BY-NC-SA 4.0_
+## Contributing
+
+Is there a Duolingo Addon or Extension that doesn't work well with the Darklingo++ Userstyle? Feel free to file an Issue letting me know.
+If you plan on contributing to this project, please read the [Contribution Guidelines](CONTRIBUTING.md) and the [Contributor Code of Conduct](CODE_OF_CONDUCT.md) first.
