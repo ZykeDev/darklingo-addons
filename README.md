@@ -20,5 +20,5 @@ License: **CC BY-NC-SA 4.0**
 
 ## Contributing
 
-Is there a Duolingo Addon or Extension that doesn't work well with the Darklingo++ Userstyle? Feel free to file an Issue letting me know.
-If you plan on contributing to this project, please read the [Contribution Guidelines](CONTRIBUTING.md) and the [Contributor Code of Conduct](CODE_OF_CONDUCT.md) first.
+Is there a Duolingo Addon or Extension that doesn't work well with the Darklingo++ Userstyle? Feel free to file an [issue](https://github.com/ZykeDev/darklingo-addons/issues) letting me know.
+If you plan on contributing youtself, please make sure to read the [Contribution Guidelines](CONTRIBUTING.md) and [Contributor Code of Conduct](CODE_OF_CONDUCT.md) first.
