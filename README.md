@@ -9,7 +9,6 @@ Base Version | Fixes Version
 
 
 An Userstyle with custom, temporary fixes to address updated features that the baseline version has yet to implement, as well as some improvements for Duolingo-related addons (Slate style only).
-
 <br>
 
 We recently switched to [semver](semver.org) versioning, which will likely require a force-update on the user-end.
