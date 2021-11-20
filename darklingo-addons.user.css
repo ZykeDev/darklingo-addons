@@ -2,7 +2,7 @@
 @name           Darklingo++ Addons
 @namespace      https://github.com/ZykeDev
 @author         Noya
-@version        1.1.2
+@version        1.1.3
 @description    A Darklingo++ extension with fixes (and custom choices). Baseline version: 20211102.5.40
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-addons
@@ -40,7 +40,7 @@
 		/* New SVGs  */
 		--characters: url(https://d35aaqx5ub95lt.cloudfront.net/vendor/0172b83513c04cbae78c47adafaf93e7.svg);
 		--characters-color: url(https://d35aaqx5ub95lt.cloudfront.net/vendor/80a60f598d6a6b0493aeb4d7b93fc0e3.svg);
-		
+
 		--learn: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/learn.svg);
 		--stories: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/stories.svg);
 		--discuss: url(https://raw.githubusercontent.com/justinikeako/darklingo/2e3ad7e284564c3195656fb7100116373357c510/assets/slate/discuss.svg);
@@ -100,7 +100,7 @@
 
 		--locked-badge: brightness(0.4) contrast(2) brightness(0.4);
 		--locked-lesson: brightness(0.475) contrast(1.5) brightness(0.8);
-		--locked-story: brightness(0.5) contrast(1.5) brightness(0.8); 
+		--locked-story: brightness(0.5) contrast(1.5) brightness(0.8);
 
 		--hover: var(--150);
 
@@ -135,7 +135,7 @@
 		--legendary: #a9a1ff;
 	}
 
- 
+
 	/* New SVGs (characters and crowns). Ignoring DL++ sprites. */
 	[src="//d35aaqx5ub95lt.cloudfront.net/vendor/0172b83513c04cbae78c47adafaf93e7.svg"] {
 		background-image: var(--characters);
@@ -144,30 +144,77 @@
 		background-image: var(--characters-color);
 	}
 
-	
+
 
 	/*** Personal Preferences ***/
-	/* Remove adblock related box */
+	/* Remove adBlock related box */
 	._1UOwI {
 		display: none;
 	}
 
-	/* Darker Background color for better contrast */
+	/* Fixes border color around big kanji questions */
+	.M9uPP {
+		border-color: var(--200);
+	}
+
+
+	/* Darkens the Background color for better contrast */
+	body,
+	input[type=checkbox],
+	.eP5n4.BLCtW::before,
+	._3xJLZ::before,
+	._304vr::before,
+	._3C_oC::before,
 	._2Smk1::after,
+	._3yA12::after,
+	.eP5n4::before,
+	.VTYcX::before,
+	.sub-container,
+	.site-wrapper,
+	.navbar-inc,
 	._33APU,
 	._3lUbm,
 	._2VrUB,
+	._2nHL0,
+	._1BneE,
+	._1NPyE,
 	._3ha9t,
+	._2M6NO,
+	._1hnzV,
 	._2Kxv6,
+	._3PnTi,
+	._3gK3K,
+	._1AUpU,
+	._1qYD7,
+	._2j1Gc,
+	._11zAS,
 	._2PVaI,
+	._1YNZB,
+	._1U1P1,
+	._2GPX6,
+	._2QKoe,
+	._2Dx4v,
+	._1lgsd,
+	._1zsgz,
+	._3wZWk,
+	._3f1oK,
 	._17s2H,
+	._1ISLH,
+	._2VmmU,
+	._2Skl3,
+	._3rgc9,
 	._2nLk_,
+	._2Y3c_,
+	.EEvc9,
+	.xzblA,
 	.FrL-W,
 	.XO-AE,
-	.l-V52,
-	body {
-		background: var(--50);
+	.l-V52 {
+		background-color: var(--50) !important;
 	}
+
+
+
 
 	/* Faded sides on Perfectly completed lessons */
 	._3FFs0 {
@@ -184,8 +231,7 @@
 		background-color: rgba(0, 0, 0, 0) !important;
 	}
 
-  
-	
+
 	/* Loading page */
 	.DvBxN,
 	._3IvEG,
@@ -201,7 +247,7 @@
 		--outline-color: var(--200);
 		background: #383838;
 	}
-	
+
 	/* Loading button animation background on lesson completion */
 	._35QY2,
 	._3jIlr,
@@ -209,11 +255,10 @@
 		background-color: rgba(0, 0, 0, 0);
 	}
 }
-	
-@-moz-document domain("duolingo.com") {
-	
-	/*** Duo Strength Extension Fixes  ***/
 
+@-moz-document domain("duolingo.com") {
+
+	/*** Duo Strength Extension Fixes  ***/
 	/* Darkens the color of strength bars */
 	.strengthBarBackground {
 		background-color: var(--600);
