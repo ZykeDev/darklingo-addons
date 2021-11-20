@@ -8,7 +8,9 @@ Base Version | Addon Version
 
 
 
-An Userstyle with custom, temporary fixes to address updated features that the baseline version has yet to implement, as well as some improvements for Duolingo-related addons (Slate style only).
+A userstyle with custom, temporary fixes to address updated features that the base Darklingo++ version has yet to implement, as well as some improvements for Duolingo-related addons (Slate style only).
+
+This addon also give an option to Show or Hide all ad/adBlocked boxes.
 <br>
 
 > **14/11 Update**: We recently switched to [semver](semver.org) versioning, which will likely require a force-update on the user-end.
