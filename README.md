@@ -1,6 +1,6 @@
 # Darklingo++ Addon & Custom Fixes
 
-![GitHub release](https://img.shields.io/github/v/release/ZykeDev/darklingo-addons?color=%2300adad&label=Version&sort=semver&style=for-the-badge)
+![GitHub release](https://img.shields.io/github/v/release/ZykeDev/darklingo-addons?color=%2300adad&label=Version&sort=semver)
  
 Base Version | Addon Version
 ------------ | -------------
