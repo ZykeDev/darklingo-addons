@@ -2,7 +2,7 @@
 @name           Darklingo++ Addons
 @author         Noya
 @namespace      github.com/ZykeDev
-@version        1.2.1
+@version        1.2.2
 @description    A Darklingo++ extension with fixes (and custom changes). Baseline version: 20211102.5.40
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-addons
@@ -155,6 +155,7 @@ EOT;
 	[src="//d35aaqx5ub95lt.cloudfront.net/vendor/80a60f598d6a6b0493aeb4d7b93fc0e3.svg"] {
 		background-image: var(--characters-color);
 	}
+	
 
 
 	/*** Personal Preferences ***/
@@ -260,6 +261,12 @@ EOT;
 	.f2zGP {
 		background-color: rgba(0, 0, 0, 0);
 	}
+	
+	
+	textarea, ._1UqAr, ._1UqAr * {
+		font-family: Helvetica !important;
+	}
+	
 }
 
 @-moz-document domain("duolingo.com") {
@@ -287,6 +294,15 @@ EOT;
 	/* Fix greyed out answer texts */
 	._2NFt_ {
 		color: var(--primary);
+	}
+	
+	/* Fix Legendary crown in the Crowns panel */
+	[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/dc4851466463c85bbfcaaaaae18e1925.svg"] {
+		background-image: url(https://d35aaqx5ub95lt.cloudfront.net/images/crowns/dc4851466463c85bbfcaaaaae18e1925.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 80% !important;
+		height: 80% !important;
 	}
 
 
