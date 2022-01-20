@@ -2,7 +2,7 @@
 @name           Darklingo++ Addons
 @author         Noya
 @namespace      github.com/ZykeDev
-@version        1.2.2
+@version        1.2.3
 @description    A Darklingo++ extension with fixes (and custom changes). Baseline version: 20211102.5.40
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-addons
@@ -253,6 +253,10 @@ EOT;
 	._3shLX {
 		--outline-color: var(--200);
 		background: #383838;
+	}
+	
+	._2qIaj  ._3UnyJ {
+		--outline-color: var(--200);
 	}
 
 	/* Loading button animation background on lesson completion */
