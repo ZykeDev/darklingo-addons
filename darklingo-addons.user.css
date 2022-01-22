@@ -2,7 +2,7 @@
 @name           Darklingo++ Addons
 @author         Noya
 @namespace      github.com/ZykeDev
-@version        1.2.3
+@version        1.3.0
 @description    A Darklingo++ extension with fixes (and custom changes). Baseline version: 20211102.5.40
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-addons
@@ -16,6 +16,14 @@ EOT;
 	hide "Hide" <<<EOT 
 	/* Remove ad & adBlock related boxes *\/
 	._1UOwI, ._39CMQ, ._1UOwI { display: none; }
+EOT;
+}
+@advanced		dropdown change-font "Change Font" {
+	no "No" <<<EOT  
+EOT;
+	helvetica "Helvetica" <<<EOT 
+	/* Changes the font of inputted text, as some browsers fail to use the correct Duo font family. *\/
+	textarea, ._1UqAr, ._1UqAr * { font-family: "Helvetica" !important; }
 EOT;
 }
 
@@ -147,7 +155,6 @@ EOT;
 	}
 
 
-	/*[[hide-ads]]*/
 	/* New SVGs (characters and crowns). Ignoring DL++ sprites. */
 	[src="//d35aaqx5ub95lt.cloudfront.net/vendor/0172b83513c04cbae78c47adafaf93e7.svg"] {
 		background-image: var(--characters);
@@ -159,6 +166,10 @@ EOT;
 
 
 	/*** Personal Preferences ***/
+	
+	/*[[hide-ads]]*/
+	/*[[change-font]]*/
+	
 	/* Fixes border color around big kanji questions */
 	.M9uPP {
 		border-color: var(--200);
@@ -224,7 +235,7 @@ EOT;
 
 
 	/* Faded sides on Perfectly completed lessons */
-	._3FFs0 {
+	._3FFs0, ._3plTW {
 		background: linear-gradient(90deg, var(--50), hsla(0, 0%, 100%, 0) 10%, hsla(0, 0%, 100%, 0) 90%, var(--50));
 	}
 
@@ -264,13 +275,7 @@ EOT;
 	._3jIlr,
 	.f2zGP {
 		background-color: rgba(0, 0, 0, 0);
-	}
-	
-	
-	textarea, ._1UqAr, ._1UqAr * {
-		font-family: Helvetica !important;
-	}
-	
+	}	
 }
 
 @-moz-document domain("duolingo.com") {
