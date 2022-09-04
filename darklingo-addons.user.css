@@ -2,7 +2,7 @@
 @name           Darklingo++ Addons
 @author         Noya
 @namespace      github.com/ZykeDev
-@version        1.3.1
+@version        1.3.2
 @description    A Darklingo++ extension with fixes (and custom changes). Baseline version: 20211102.5.40
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-addons
@@ -168,7 +168,6 @@ EOT;
 		background: var(--50);
 	}
 
-
 	/*** Personal Preferences ***/
 	
 	/*[[hide-ads]]*/
@@ -248,10 +247,21 @@ EOT;
 		background: none;
 	}
 
-	/* Use the same background colors in the User profile page */
+	/* User profile page */
 	._2GPX6 {
 		background-color: rgba(0, 0, 0, 0) !important;
 	}
+	[href="/friend-updates"] > div {
+		color: var(--primary);
+	}
+	[href="/friend-updates"] > div img {
+		object-position: -50px 50px;
+		background: url(https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/images/friend-updates.svg);
+		width: 42px;
+		height: 42px;
+		margin-right: 10px;
+	}
+	
 
 
 	/* Loading page */
@@ -288,6 +298,11 @@ EOT;
 	._3esGm > div > div > div {
 		color: var(--700);
 	}
+	.Xzfbf {
+		border-color: var(--200);
+	}
+	
+
 }
 
 @-moz-document domain("duolingo.com") {
@@ -339,4 +354,11 @@ EOT;
 	#labels {
 		fill: #FFF;
 	}
+	
+	
+	/* Streak overlay */
+	[data-test="streak-panel"]  ._2LOmw > div {
+		border-color: var(--200) !important;
+	}
+	
 }
