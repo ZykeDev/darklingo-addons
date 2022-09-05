@@ -11,7 +11,7 @@ A userstyle with custom, temporary fixes to address updated features that the ba
 This addon also give an option to Show or Hide all ad/adBlocked boxes.
 <br>
 
-> **14/11/21 Update**: We recently switched to [semver](https://semver.org/) versioning, which will likely require a force-update on the user-end.
+> **14/11/21 Update**: We switched to [semver](https://semver.org/) versioning, which may require a force-update if your version was installed prior to this date.
 
 
 ## Contributing
