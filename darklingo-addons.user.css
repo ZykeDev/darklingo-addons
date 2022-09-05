@@ -2,7 +2,7 @@
 @name           Darklingo++ Addons
 @author         Noya
 @namespace      github.com/ZykeDev
-@version        1.3.2
+@version        1.3.3
 @description    A Darklingo++ extension with fixes (and custom changes). Baseline version: 20211102.5.40
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-addons
@@ -360,5 +360,10 @@ EOT;
 	[data-test="streak-panel"]  ._2LOmw > div {
 		border-color: var(--200) !important;
 	}
-	
+	._1HA7Y > div:not([data-test="streak-slide"]) {
+		border-color: var(--200);
+	}
+	._1HA7Y > div:not([data-test="streak-slide"]):after {
+    	background-color: var(--200);
+	}
 }
