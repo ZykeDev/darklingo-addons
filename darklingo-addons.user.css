@@ -2,7 +2,7 @@
 @name           Darklingo++ Addons
 @author         Noya
 @namespace      github.com/ZykeDev
-@version        1.3.3
+@version        1.3.4
 @description    A Darklingo++ extension with fixes (and custom changes). Baseline version: 20211102.5.40
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-addons
@@ -15,7 +15,7 @@
 EOT;
 	hide "Hide" <<<EOT 
 	/* Remove ad & adBlock related boxes *\/
-	._1UOwI, ._39CMQ, ._1UOwI { display: none; }
+	._1UOwI, ._39CMQ, ._1UOwI, ._3bfsh { display: none; }
 EOT;
 }
 @advanced		dropdown change-font "Change Font" {
