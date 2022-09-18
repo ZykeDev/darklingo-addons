@@ -2,7 +2,7 @@
 @name           Darklingo++ Addons
 @author         Noya
 @namespace      github.com/ZykeDev
-@version        1.3.5
+@version        1.3.6
 @description    A Darklingo++ extension with fixes (and custom changes). Baseline version: 20211102.5.40
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-addons
@@ -371,4 +371,11 @@ EOT;
 	._1HA7Y > div:not([data-test="streak-slide"]):after {
     	background-color: var(--200);
 	}
+	/* Streak after a Lesson */
+	._34OQ5 > div {
+		background-color: var(--200);
+	}
+	._34OQ5:last-child div {
+		background-color: rgba(0, 0, 0, 0) !important;
+	}	
 }
