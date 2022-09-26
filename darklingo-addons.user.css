@@ -2,7 +2,7 @@
 @name           Darklingo++ Addons
 @author         Noya
 @namespace      github.com/ZykeDev
-@version        1.3.11
+@version        1.3.12
 @description    A Darklingo++ extension with fixes (and custom changes). Baseline version: 20211102.5.40
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-addons
@@ -379,7 +379,8 @@ EOT;
 		background-color: rgba(0, 0, 0, 0);
 	}
 	._1BSaR ._34OQ5 > div, /* The bar uses differently named parents for each day */
-	._1ZWk9 ._34OQ5 > div, 
+	._1ZWk9 ._34OQ5 > div,
+	.o7Pvz ._34OQ5 > div,
 	._3v5DY ._34OQ5 > div,
 	._333vE ._34OQ5 > div {
 		background-color: rgba(0, 0, 0, 0);
@@ -390,6 +391,5 @@ EOT;
 	.ZMDu5 > div > ._21MzE {
 		color: var(--600) !important;
 	}
-	
 	
 }
