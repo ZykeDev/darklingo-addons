@@ -2,7 +2,7 @@
 @name           Darklingo++ Addons
 @author         Noya
 @namespace      github.com/ZykeDev
-@version        1.3.13
+@version        1.3.14
 @description    A Darklingo++ extension with fixes (and custom changes). Baseline version: 20211102.5.40
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-addons
@@ -173,9 +173,14 @@ EOT;
 	/*[[hide-ads]]*/
 	/*[[change-font]]*/
 	
-	/* Fixes border color around big kanji questions */
+	/* Fixes border color around questions tiles */
 	.M9uPP {
 		border-color: var(--200);
+	}
+	
+	._2-OmZ, ._2-OmZ::before {
+		box-shadow: 0 0 0 var(--200);
+		border-color: var(--200) !important;
 	}
 
 
