@@ -2,7 +2,7 @@
 @name           Darklingo++ Addons
 @author         Noya
 @namespace      github.com/ZykeDev
-@version        1.3.14
+@version        1.3.15
 @description    A Darklingo++ extension with fixes (and custom changes). Baseline version: 20211102.5.40
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-addons
@@ -177,12 +177,11 @@ EOT;
 	.M9uPP {
 		border-color: var(--200);
 	}
-	
-	._2-OmZ, ._2-OmZ::before {
+	._2-OmZ, ._2-OmZ::before, ._3C_oC {
 		box-shadow: 0 0 0 var(--200);
 		border-color: var(--200) !important;
+		--__internal__border-color: var(--200);
 	}
-
 
 	/* Darkens the Background color for better contrast */
 	body,
@@ -241,7 +240,6 @@ EOT;
 
 
 
-
 	/* Faded sides on Perfectly completed lessons */
 	._3FFs0, ._3plTW {
 		background: linear-gradient(90deg, var(--50), hsla(0, 0%, 100%, 0) 10%, hsla(0, 0%, 100%, 0) 90%, var(--50));
@@ -267,7 +265,6 @@ EOT;
 		margin-right: 10px;
 	}
 	
-
 
 	/* Loading page */
 	.DvBxN,
@@ -325,7 +322,6 @@ EOT;
 	.strengthBar {
 		opacity: 0.75;
 	}
-
 	.strengthValue {
 		padding-right: 5px;
 		color: var(--50);
@@ -343,7 +339,7 @@ EOT;
 	}
 	
 	/* Fix Legendary crown in the Crowns panel */
-	[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/dc4851466463c85bbfcaaaaae18e1925.svg"] {
+[src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/dc4851466463c85bbfcaaaaae18e1925.svg"] {
 		background-image: url(https://d35aaqx5ub95lt.cloudfront.net/images/crowns/dc4851466463c85bbfcaaaaae18e1925.svg);
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -360,7 +356,6 @@ EOT;
 	.treeLevelPrediction {
 		color: #A5A5A5 !important;
 	}
-
 	#labels {
 		fill: #FFF;
 	}
@@ -393,7 +388,6 @@ EOT;
 	}
 	
 	/* Lesson Review */
-	
 	.ZMDu5 > div > ._21MzE {
 		color: var(--600) !important;
 	}
