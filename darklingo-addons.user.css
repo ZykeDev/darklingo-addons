@@ -2,7 +2,7 @@
 @name           Darklingo++ Addons
 @author         Noya
 @namespace      github.com/ZykeDev
-@version        1.3.16
+@version        2.0.0-preview
 @description    A Darklingo++ extension with fixes (and custom changes). Baseline version: 20211102.5.40
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-addons
@@ -16,6 +16,7 @@ EOT;
 	hide "Hide" <<<EOT 
 	/* Remove ad & adBlock related boxes *\/
 	._1UOwI, ._39CMQ, ._1UOwI, ._3bfsh { display: none; }
+	._2eT5n { display: none; }
 EOT;
 }
 @advanced		dropdown change-font "Change Font" {
@@ -26,7 +27,6 @@ EOT;
 	textarea, ._1UqAr, ._1UqAr * { font-family: "Helvetica" !important; }
 EOT;
 }
-
 ==/UserStyle== */
 
 @-moz-document domain("duolingo.com") {
@@ -152,6 +152,7 @@ EOT;
 		--custom-color-translucent-medium: #1F98D240;
 
 		--legendary: #a9a1ff;
+		--super: #684FFF; /* Slightly different to work better with -100 */
 	}
 
 
@@ -163,11 +164,62 @@ EOT;
 		background-image: var(--characters-color);
 	}
 	
-	/* New vertical nav */
+	._3zucw > span {
+		color: var(--super);
+	}
+	
+	/* Nav */
 	._3bTT7 {
-		background: var(--50);
+		background: var(--100);
+	}
+	._1eTnJ:hover:not(._2IQEn) {
+		background: #EEE;
+	}
+	
+	._1adRe ._18W4a, .xtPuL {
+		background-color: var(--100) !important;
+	}
+	
+	/* Legendary practice button text */
+	._2d9xQ .ZzIVh {
+   		color: var(--light-translucent-800);
+	}
+	
+	/* Legendary practice button background */
+	._1KUxv {
+		background-color: var(--150);
+	}
+	
+	/* Circle progress bar background */
+	._2Q9Af > svg > g > path:nth-child(1), 
+	._2Q9Af > svg > g > circle {
+		fill: var(--600);
 	}
 
+
+	/* Section Headers */	
+	.McRhL > header > h1, /* Green */
+	.xf9K- > header > h1, /* Blue */
+	._20xW2 > header > h1, /* Fuchsia */
+	.klQHM > header > h1, /* Orange */
+	._2hnip > header > h1, /* Brown */
+	._2sUux > header > h1, /* Lilac */
+	.P-rr7 > header > h1, /* Teal */
+	.V4o_h > header > h1, /* Azure */
+	._2VqHs > header > h1, /* Pink */
+	.XooQQ > header > h1, /* Ocra */	
+	._2HJFd > header > h1 /* Persimmon */
+	{
+		color: #FFF;
+	}
+	/* Gold sections */
+	._2IXLF > header > h1,
+	._2IXLF > header > *
+	{
+    	color: var(--path-unit-foreground-color);
+	}
+	
+	
 	/*** Personal Preferences ***/
 	
 	/*[[hide-ads]]*/
@@ -235,7 +287,7 @@ EOT;
 	.FrL-W,
 	.XO-AE,
 	.l-V52 {
-		background-color: var(--50) !important;
+		background-color: var(-100) !important;
 	}
 
 
@@ -269,9 +321,7 @@ EOT;
 	/* Loading page */
 	.DvBxN,
 	._3IvEG,
-	._3IGQx,
-	._18W4a,
-	.xtPuL {
+	._3IGQx {
 		background-color: var(--50);
 		color: var(--primary);
 	}
@@ -407,7 +457,5 @@ EOT;
 	/* Lesson Review */
 	.ZMDu5 > div > ._21MzE {
 		color: var(--600) !important;
-	}
-	
-	
+	}	
 }
