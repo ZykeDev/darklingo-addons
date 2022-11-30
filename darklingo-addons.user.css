@@ -2,7 +2,7 @@
 @name           Darklingo++ Addons
 @author         Noya
 @namespace      github.com/ZykeDev
-@version        2.0.0-preview
+@version        2.0.1-preview
 @description    A Darklingo++ extension with fixes (and custom changes). Baseline version: 20211102.5.40
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-addons
@@ -16,7 +16,7 @@ EOT;
 	hide "Hide" <<<EOT 
 	/* Remove ad & adBlock related boxes *\/
 	._1UOwI, ._39CMQ, ._1UOwI, ._3bfsh { display: none; }
-	._2eT5n { display: none; }
+	._2eT5n, .Ekspr { display: none; }
 EOT;
 }
 @advanced		dropdown change-font "Change Font" {
@@ -217,6 +217,17 @@ EOT;
 	._2IXLF > header > *
 	{
     	color: var(--path-unit-foreground-color);
+	}
+	/* Sidebar Headers */
+	._3ZuGY > div > h2,
+	._3ZuGY > div > div > h2 {
+		color: var(--800);
+	}
+	
+	
+	/* League/Leaderboards  */
+	._2p1op {
+		background-color: var(--100);
 	}
 	
 	
@@ -457,5 +468,7 @@ EOT;
 	/* Lesson Review */
 	.ZMDu5 > div > ._21MzE {
 		color: var(--600) !important;
-	}	
+	}
+	
+	
 }
