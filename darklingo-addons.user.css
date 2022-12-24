@@ -2,7 +2,7 @@
 @name           Darklingo++ Addons
 @author         Noya
 @namespace      github.com/ZykeDev
-@version        2.0.1-preview
+@version        2.0.3
 @description    A Darklingo++ extension with fixes (and custom changes). Baseline version: 20211102.5.40
 @updateURL      https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css
 @homepageURL  	https://github.com/ZykeDev/darklingo-addons
@@ -195,6 +195,11 @@ EOT;
 	._2Q9Af > svg > g > circle {
 		fill: var(--600);
 	}
+	/* Start button text */
+	._3l1O1  > a,
+	._3ET5m .ZzIVh {
+		color: #EEE;
+	}
 
 
 	/* Section Headers */	
@@ -298,7 +303,7 @@ EOT;
 	.FrL-W,
 	.XO-AE,
 	.l-V52 {
-		background-color: var(-100) !important;
+		background: var(-100) !important;
 	}
 
 
@@ -342,7 +347,6 @@ EOT;
 		--outline-color: var(--200);
 		background: #383838;
 	}
-	
 	._2qIaj  ._3UnyJ {
 		--outline-color: var(--200);
 	}
@@ -385,9 +389,7 @@ EOT;
 	}	
 	._1hEOp ._13Rl7 ._3pCeN {
 		border-radius: 16px !important;
-	}
-	
-	
+	}	
 }
 
 @-moz-document domain("duolingo.com") {
@@ -411,12 +413,12 @@ EOT;
 		color: var(--custom-color) !important;
 	}
 
-	/* Fix greyed out answer texts */
+	/* Fixes greyed out answer texts */
 	._2NFt_ {
 		color: var(--primary);
 	}
 	
-	/* Fix Legendary crown in the Crowns panel */
+	/* Fixes Legendary crown in the Crowns panel */
 [src="//d35aaqx5ub95lt.cloudfront.net/images/crowns/dc4851466463c85bbfcaaaaae18e1925.svg"] {
 		background-image: url(https://d35aaqx5ub95lt.cloudfront.net/images/crowns/dc4851466463c85bbfcaaaaae18e1925.svg);
 		background-size: contain;
@@ -426,7 +428,7 @@ EOT;
 	}
 
 
-	/* XP Dialog Fixes */
+	/* Fixes XP Dialog */
 	.crownLevelBreakdownContainer,
 	.treeLevelSentence,
 	.XPBox,
