@@ -11,8 +11,6 @@ A userstyle with custom, temporary fixes to address updated features that the ba
 This addon also adds an option to Show or Hide all ad/ad-blocked boxes.
 <br>
 
-> **28/11/22 Update**: An update addressing the Duolingo Redesign is slowly being worked on.
-
 > **14/11/21 Update**: We switched to [semver](https://semver.org/) versioning, which may require a force-update if your version was installed prior to this date.
 
 
