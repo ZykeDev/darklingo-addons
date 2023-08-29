@@ -1,5 +1,9 @@
 # Darklingo++ Addon & Custom Fixes
 
+> **NOTE**: This repo has been discontinued as I have A) stopped using Duolingo, and B) moved to [Dark Reader](https://darkreader.org/) to browse in dark mode (doesn't offer as much granularity, but it's less of a hassle).
+
+---
+
 Base Version | Addon Version
 ------------ | -------------
 [![Install directly with Stylus. This links to the official version, not the mirror](https://img.shields.io/badge/Install%20%20with-Stylus-00adad.svg?style=for-the-badge&logo=stylus)](https://cdn.jsdelivr.net/gh/33kk/uso-archive@flomaster/data/usercss/169205.user.css) | [![Install directly with Stylus](https://img.shields.io/badge/Install%20%20with-Stylus-00adad.svg?style=for-the-badge&logo=stylus)](https://raw.githubusercontent.com/ZykeDev/darklingo-addons/main/darklingo-addons.user.css)
@@ -10,9 +14,6 @@ A userstyle with custom, temporary fixes to address updated features that the ba
 
 This addon also adds an option to Show or Hide all ad/ad-blocked boxes.
 <br>
-
-> **14/11/21 Update**: We switched to [semver](https://semver.org/) versioning, which may require a force-update if your version was installed prior to this date.
-
 
 ## Contributing
 
